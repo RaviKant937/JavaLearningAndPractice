@@ -13,7 +13,7 @@ class Sample implements Serializable {
 public class ObjectToByteArray {
     public static void main(String args[]) throws Exception {
         Sample obj = new Sample();
-        FileOutputStream fos = new FileOutputStream("abc.txt");
+        FileOutputStream fos = new FileOutputStream("input.txt");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(obj);
         oos.flush();
