@@ -7,6 +7,8 @@ public class TestingOldWayForList {
     public static void addingElementsInList(List list){
         list.add(new String("Hi, you are inserting wrong entries."));
     }
+
+
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<Integer>();
         list.add(1);

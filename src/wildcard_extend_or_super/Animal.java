@@ -1,5 +1,7 @@
 package wildcard_extend_or_super;
 
-public class Animal {
-
+class Animal extends LivingThings {
+    Integer numberOfLegs(){
+        return null;
+    }
 }
