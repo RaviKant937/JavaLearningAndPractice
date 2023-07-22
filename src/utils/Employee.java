@@ -1,18 +1,26 @@
-package sorting_technique_comparable_comparator;
+package utils;
 
-public class Employee implements Comparable<Employee> {
+public class Employee {
     String name, address;
-    long enpId, phoneNumber, scoialSecurityNumber;
+    Long enpId, phoneNumber, scoialSecurityNumber;
 
     public Employee() {
     }
 
-    public Employee(String name, String address, long enpId, long phoneNumber, long scoialSecurityNumber) {
-        this.name = name;
-        this.address = address;
-        this.enpId = enpId;
+    public Employee(String name, String address, Long enpId, Long phoneNumber, Long scoialSecurityNumber) {
+        this(name, enpId, address);
         this.phoneNumber = phoneNumber;
         this.scoialSecurityNumber = scoialSecurityNumber;
+    }
+
+    public Employee(String name, Long enpId){
+        this.name = name;
+        this.enpId = enpId;
+    }
+
+    public Employee(String name, Long enpId, String address){
+        this(name, enpId);
+        this.address = address;
     }
 
     public String getName() {
@@ -31,46 +39,38 @@ public class Employee implements Comparable<Employee> {
         this.address = address;
     }
 
-    public long getEnpId() {
+    public Long getEnpId() {
         return enpId;
     }
 
-    public void setEnpId(long enpId) {
+    public void setEnpId(Long enpId) {
         this.enpId = enpId;
     }
 
-    public long getPhoneNumber() {
+    public Long getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(long phoneNumber) {
+    public void setPhoneNumber(Long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    public long getScoialSecurityNumber() {
+    public Long getScoialSecurityNumber() {
         return scoialSecurityNumber;
     }
 
-    public void setScoialSecurityNumber(long scoialSecurityNumber) {
+    public void setScoialSecurityNumber(Long scoialSecurityNumber) {
         this.scoialSecurityNumber = scoialSecurityNumber;
     }
-
 
     @Override
     public String toString() {
         return "Employee{" +
-                "name='" + name + '\'' +
+                " name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 ", enpId=" + enpId +
                 ", phoneNumber=" + phoneNumber +
                 ", scoialSecurityNumber=" + scoialSecurityNumber +
-                "}\n";
-    }
-
-    @Override
-    public int compareTo(Employee o) {
-        if(this.enpId > o.enpId) return 1;
-        if(this.enpId==o.enpId) return 0;
-        return -1;
+                '}';
     }
 }

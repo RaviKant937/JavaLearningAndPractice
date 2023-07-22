@@ -1,8 +1,11 @@
-package binary_search;
+package functional_interfaces.binary_search;
+
+import utils.Employee;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 public class PracticingBinarySearch {
     public static void main(String[] args) {
@@ -23,5 +26,14 @@ public class PracticingBinarySearch {
         System.out.println(list);
         int index = Collections.binarySearch(list, 6, Comparator.naturalOrder());
         System.out.println(index);
+
+        List<Employee> employeeList = new ArrayList<>();
+        employeeList.add(new Employee("ravi", 1L, "Patna"));
+        employeeList.add(new Employee("divyansh", 2L, "agra"));
+        employeeList.add(new Employee("ajay", 3L, "gorakhpur"));
+
+        index = Collections.binarySearch(employeeList, new Employee("chutiya", 1L), Comparator.comparing(Employee::getEnpId));
+        System.out.println(index);
+
     }
 }

@@ -1,8 +1,7 @@
-package sorting_technique_comparable_comparator;
+package functional_interfaces.sorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class TryingSortingOnEmployee {
