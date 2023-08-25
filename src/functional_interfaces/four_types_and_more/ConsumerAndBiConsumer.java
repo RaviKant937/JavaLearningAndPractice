@@ -14,6 +14,16 @@ public class ConsumerAndBiConsumer {
         };
         printNames.accept(names);
 
+        Consumer<String> printMessage = msg -> System.out.println("Printing: " + msg);
+        Consumer<String> printUpperCase = msg -> System.out.println("UpperCase: " + msg.toUpperCase());
+        Consumer<String> printLowerCase = msg -> System.out.println("LowerCase: " + msg.toLowerCase());
+
+        // Compose a chain of consumers using andThen()
+        Consumer<String> printMessageChain = printMessage.andThen(printUpperCase).andThen(printLowerCase);
+
+        // Use the chain of consumers
+        printMessageChain.accept("Hello, World!");
+
 
         Map<String, Integer> ages = new HashMap<>();
         BiConsumer<String, Integer> addAge = (name, age) -> ages.put(name, age);
