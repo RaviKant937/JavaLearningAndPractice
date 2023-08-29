@@ -1,4 +1,4 @@
-package inner_classes;
+package inner_classes_and_annonymous_classes;
 
 interface Greeting1 {
     void greet();
@@ -17,6 +17,10 @@ public class AnnonymousClassSimple {
             @Override
             void draw() {
                 System.out.println("Drawing from anonymous class extending Shape!");
+            }
+
+            void justForThinking(){
+                System.out.println("thinking completed.");
             }
         };
 

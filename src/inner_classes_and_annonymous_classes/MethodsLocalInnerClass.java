@@ -1,8 +1,9 @@
-package inner_classes;
+package inner_classes_and_annonymous_classes;
 
 public class MethodsLocalInnerClass {
 
-    public static void justForFun(){
+    public static void justForFun(String abcd){
+        String hello = "why are you saying hello at this hour of day?.";
         //we cannot create static class here.
 //        static class Abc{
 //            public static void oneMoreJustForFun(){
@@ -11,7 +12,7 @@ public class MethodsLocalInnerClass {
 //        }
         class Abc{
             public void oneMoreJustForFun(){
-                System.out.println(this.getClass().getSimpleName());
+                System.out.println(this.getClass().getSimpleName() + hello);
             }
         }
         Abc abc = new Abc();
@@ -19,8 +20,8 @@ public class MethodsLocalInnerClass {
     }
     public static void main(String[] args) {
         MethodsLocalInnerClass methodsLocalInnerClass = new MethodsLocalInnerClass();
-        methodsLocalInnerClass.justForFun();
+        methodsLocalInnerClass.justForFun("sdf");
 
-        MethodsLocalInnerClass.justForFun();
+        MethodsLocalInnerClass.justForFun("sdf");
     }
 }

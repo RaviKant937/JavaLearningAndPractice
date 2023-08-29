@@ -1,4 +1,4 @@
-package inner_classes;
+package inner_classes_and_annonymous_classes;
 
 @FunctionalInterface
 interface JustForTesting{

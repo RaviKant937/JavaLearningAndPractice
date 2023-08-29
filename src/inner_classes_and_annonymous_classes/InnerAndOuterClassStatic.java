@@ -1,14 +1,14 @@
-package inner_classes;
+package inner_classes_and_annonymous_classes;
 
 public class InnerAndOuterClassStatic {
-    private static String abcd = "hello aur kro chutiyapa.";
+     static String abcd = "hello aur kro chutiyapa.";
     static class InnerClass{
         public static void abc(){
             justForSatisfaction();
             System.out.println("inside abc function of inner class." + abcd);
         }
         public void xyz(){
-            System.out.println("hello ji kaise ho.");;
+            System.out.println("hello ji kaise ho." + abcd);;
         }
     }
 
