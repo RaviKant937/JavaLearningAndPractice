@@ -17,6 +17,6 @@ public class InnerAndOuterClassStatic {
     }
 
     public static void main(String[] args) {
-        InnerAndOuterClassStatic.InnerClass.abc();
+        InnerClass.abc();
     }
 }

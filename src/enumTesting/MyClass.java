@@ -21,6 +21,6 @@ public class MyClass implements MyInterface {
 
     public static void main(String[] args) {
         MyClass obj = new MyClass();
-        obj.printDay(MyInterface.Day.MONDAY);
+        obj.printDay(Day.MONDAY);
     }
 }

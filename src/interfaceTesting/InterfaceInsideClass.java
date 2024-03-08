@@ -24,7 +24,7 @@ public class InterfaceInsideClass extends DemoClass implements DemoClass.outer,i
         InterfaceInsideClass interfaceInsideClass = new InterfaceInsideClass();
         DemoClass.hi();
         interfaceInsideClass.showMyName();
-        inner.abcd abcd = new inner.abcd();
+        abcd abcd = new abcd();
         abcd.canYouTouchMe();
         Map<String,String> mymap = new HashMap<>();
     }

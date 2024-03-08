@@ -17,7 +17,7 @@ public class InnerAndOuterClass {
     public static void main(String[] args) {
         abc = ", hello bsdwlaa";
         InnerAndOuterClass innerAndOuterClass = new InnerAndOuterClass();
-        InnerAndOuterClass.InnerClass innerClass = innerAndOuterClass.new InnerClass();
+        InnerClass innerClass = innerAndOuterClass.new InnerClass();
         innerAndOuterClass.justClassNameOuter();
         innerClass.justClassNameInner();
     }
