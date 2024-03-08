@@ -1,9 +1,7 @@
 package wildcard_extend_or_super;
 
-import wildcard_extend_or_super.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class TestingExtend {
     /**

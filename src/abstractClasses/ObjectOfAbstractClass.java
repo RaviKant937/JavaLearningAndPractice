@@ -1,7 +1,5 @@
 package abstractClasses;
 
-import javafx.beans.property.adapter.ReadOnlyJavaBeanBooleanProperty;
-
 public class ObjectOfAbstractClass extends AbstractClassWithVarArgConstructor{
 
     public ObjectOfAbstractClass(){
@@ -19,7 +17,5 @@ public class ObjectOfAbstractClass extends AbstractClassWithVarArgConstructor{
     public static void main(String[] args) {
         ObjectOfAbstractClass objectOfAbstractClass = new ObjectOfAbstractClass();
     }
-    werwer{
-        sdfsdf
-    }
+
 }

@@ -1,6 +1,9 @@
 package play_with_exceptions;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
 
 public class TryWithResources {
     public static void main(String[] args) {

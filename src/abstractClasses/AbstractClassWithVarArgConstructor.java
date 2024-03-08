@@ -1,6 +1,6 @@
 package abstractClasses;
 
-public final abstract class AbstractClassWithVarArgConstructor {
+public  abstract class AbstractClassWithVarArgConstructor {
     public AbstractClassWithVarArgConstructor(){
         System.out.println("default constructor of AbstractClassWithVarArgConstructor");
     }
@@ -16,7 +16,7 @@ public final abstract class AbstractClassWithVarArgConstructor {
         }
     }
 
-    public justForChecking();
+
 
     public static void main(String[] args) {
 

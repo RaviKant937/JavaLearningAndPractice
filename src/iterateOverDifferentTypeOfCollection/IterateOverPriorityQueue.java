@@ -1,9 +1,7 @@
 package iterateOverDifferentTypeOfCollection;
 
 import java.util.Comparator;
-import java.util.LinkedList;
 import java.util.PriorityQueue;
-import java.util.Queue;
 
 public class IterateOverPriorityQueue {
     public static void main(String[] args) {

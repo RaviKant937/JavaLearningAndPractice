@@ -1,8 +1,6 @@
 package OverridingMethods;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.sql.SQLException;
 
 class SubClass{
     public void abcd() throws IOException {
